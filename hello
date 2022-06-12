@@ -1,0 +1,17 @@
+#! /bin/bash
+
+args=("$@")
+count=$#
+echo $count
+if [ $count -eq 1 ]
+then
+    echo There is one argument.
+elif [ $count -eq 2 ]
+then 
+    echo there are two arguments.
+elif [ $count -eq 3 ]
+then
+    echo there are three arguments.
+else
+    echo there are more than three arguments.
+fi

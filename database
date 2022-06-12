@@ -1,0 +1,9 @@
+#! /bin/bash
+
+#read -p 'give collection name : ' collection
+#echo $collection
+#command=db.$collection.find'()'.sort'({_id:-1})'.limit'(1)'.pretty'()'
+command=db.getCollectionNames'()'
+echo $command
+mongo --eval $command getwell
+ 

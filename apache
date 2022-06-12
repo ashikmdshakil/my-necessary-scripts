@@ -1,0 +1,6 @@
+#! /bin/bash
+
+cd /var/www/html
+sudo rm *
+cd /home/ashik/Scripts/
+sudo cp * /var/www/html

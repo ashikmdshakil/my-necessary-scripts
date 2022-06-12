@@ -1,0 +1,5 @@
+#! /bin/bash
+
+sshpass -p Qu1nTet2021 ssh -l root 172.105.56.56 "cd /var/www/html ; sudo rm *; rm -r assets; echo assets directory is removed";
+sshpass -p Qu1nTet2021 scp -r * root@172.105.56.56:/var/www/html;
+echo Files are sent...
